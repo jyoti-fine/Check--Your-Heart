@@ -78,8 +78,9 @@ public class MainActivity extends AppCompatActivity implements PaymentResultList
 
     @Override
     public void onPaymentError(int i, String s) {
-        Toast.makeText(getApplicationContext(),"Payment failed",Toast.LENGTH_SHORT).show();
-        paystatus.setText(s);
+        Toast.makeText(getApplicationContext(),s,Toast.LENGTH_SHORT).show();
+        paystatus.setText("failed");
+
 
     }
 }
